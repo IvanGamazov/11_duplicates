@@ -33,9 +33,10 @@ def check_if_files_are_duplicates(file_1, file_2):
     if file_1['name'] == file_2['name'] \
             and file_1['size'] == file_2['size'] \
             and file_1['path'] != file_2['path']:
-        return True
+        condition = True
     else:
-        return False
+        condition = False
+    return condition
 
 
 if __name__ == '__main__':
